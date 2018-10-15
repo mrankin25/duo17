@@ -1,0 +1,23 @@
+.bg-music {
+    background-color: $color-music;
+}
+
+.music-main {
+
+    .video {
+        // align-content: center;
+        // vertical-align: center;
+    }
+
+    .spacing {
+        // padding-right: 10px;
+    }
+
+    h2 {
+        padding-top: 30px;
+        padding-bottom: 15px;
+        text-decoration: underline;
+        text-transform: uppercase;
+        text-align: center !important;
+    }
+}

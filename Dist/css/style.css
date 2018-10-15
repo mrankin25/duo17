@@ -1,0 +1,273 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  color: #767676;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+
+a {
+  text-decoration: none; }
+  a:visited {
+    color: blue; }
+
+.clearfix {
+  overflow: auto; }
+
+.card {
+  height: 100%;
+  position: relative; }
+  .card__side {
+    height: 100%;
+    width: 100%;
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden; }
+    .card__side--front {
+      background-color: transparent; }
+    .card__side--back {
+      background-color: green;
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-color: #ed6a5a; }
+      .card__side--back-2 {
+        background-color: #f4f1bb; }
+      .card__side--back-3 {
+        background-color: #a6808c; }
+      .card__side--back-4 {
+        background-color: #5ca4a9; }
+      .card__side--back-5 {
+        background-color: #d4dfc7; }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0deg); }
+  .card__heading {
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    height: 5rem;
+    width: 100%;
+    background-color: #adccc8; }
+  .card__social {
+    letter-spacing: 5px;
+    margin-top: 50px;
+    text-align: center;
+    color: white; }
+    .card__social a {
+      text-decoration: none;
+      color: white; }
+  .card__picture {
+    background-size: contain;
+    height: 100%; }
+
+a {
+  text-decoration: none; }
+  a:visited {
+    color: inherit; }
+
+ul {
+  list-style: none; }
+
+header {
+  background: #35424a;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #e8491d 3px solid; }
+  header #branding h1 {
+    margin: 0; }
+  header .head-logo {
+    height: 75px;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    float: left; }
+  header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px; }
+    header a:hover {
+      color: #cccccc;
+      font-weight: bold; }
+  header li {
+    display: inline;
+    padding: 0 20px 0 20px; }
+  header nav {
+    float: right;
+    margin-top: 10px; }
+  header .highlight, header .current a {
+    color: #e8491d;
+    font-weight: bold; }
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block; }
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1; }
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible; }
+
+.row {
+  width: 100%;
+  margin: 0 auto; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row .col-1-of-5 {
+    width: calc((100% - 4px) / 5);
+    height: 100vh;
+    float: left; }
+    .row .col-1-of-5:not(:last-child) {
+      border-right: 1px #ffffff solid; }
+
+.bg-about {
+  background-color: #ed6a5a; }
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  padding-bottom: 15px; }
+
+.about-main {
+  padding-top: 25px; }
+  .about-main .name {
+    font-weight: 900; }
+  .about-main h2 {
+    align: center; }
+  .about-main #duo {
+    margin-bottom: 50px; }
+    .about-main #duo h3 {
+      text-align: center; }
+    .about-main #duo .center {
+      text-align: center; }
+  .about-main #jb {
+    margin-bottom: 25px; }
+    .about-main #jb p {
+      padding: 10px 0;
+      background-color: #c0ef9b;
+      padding-left: 2%; }
+    .about-main #jb h2 {
+      text-align: center; }
+    .about-main #jb img {
+      padding-left: 25px;
+      padding-right: 10px;
+      border-radius: 50%; }
+  .about-main #veena p {
+    padding: 10px 0;
+    background-color: #d0c4ff;
+    padding-right: 2%; }
+  .about-main #veena h2 {
+    text-align: center; }
+  .about-main #veena img {
+    padding-right: 25px;
+    padding-left: 10px;
+    border-radius: 50%; }
+
+.bg-contact {
+  background-color: #d4dfc7; }
+
+.contact-info {
+  padding-top: 25px;
+  font-size: 2em; }
+  .contact-info img {
+    width: 330px;
+    text-align: right; }
+  .contact-info a {
+    text-decoration: none;
+    color: blue; }
+
+.bg-events {
+  background-color: #f4f1bb; }
+
+.container {
+  width: 100%; }
+  .container .events-header {
+    padding-bottom: 25px;
+    padding-top: 25px; }
+  .container .content {
+    text-align: center; }
+    .container .content h2 {
+      text-decoration: underline;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+      padding-top: 25px; }
+    .container .content p {
+      text-decoration: none; }
+    .container .content .bold {
+      font-weight: 700;
+      text-decoration: none; }
+
+.home {
+  height: 100vh;
+  width: 100%;
+  background-image: url(/Dist/assets/home.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  /* filter: blur(10px);
+    -webkit-filter: blur(10px); */ }
+
+.logo {
+  height: 150px;
+  display: block;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto; }
+
+h4 {
+  padding-top: 6%;
+  text-decoration: underline; }
+
+.bg-music {
+  background-color: #a6808c; }
+
+.music-main h2 {
+  padding-top: 30px;
+  padding-bottom: 15px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-align: center !important; }
+
+.bg-resources {
+  background-color: #5ca4a9; }
+
+.resources-main {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-left: 25px;
+  margin-right: 25px; }
+  .resources-main .sample-programs h2 {
+    text-decoration: underline;
+    padding-bottom: 10px; }
+  .resources-main .sample-programs p {
+    padding-bottom: 25px; }

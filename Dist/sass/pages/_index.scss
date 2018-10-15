@@ -1,0 +1,34 @@
+.home {
+    height: 100vh;
+    width: 100%;
+    background-image:url(/Dist/assets/home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block; 
+    /* filter: blur(10px);
+    -webkit-filter: blur(10px); */
+    // transition: all 1000ms;
+}
+
+.logo {
+    height: 150px;
+    display: block;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    // margin-left: 20px;
+    // float: left;
+}
+// .social {
+//     /* height: 150px; */
+//     margin-top: 65px;
+//     margin-right: 20px;
+//     float: right;
+//     letter-spacing: 10px;
+// }
+
+h4 {
+    padding-top: 6%;
+    text-decoration: underline;
+}

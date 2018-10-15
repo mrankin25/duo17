@@ -1,0 +1,30 @@
+.bg-resources {
+    background-color: $color-resources;
+}
+
+.resources-main {
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    margin-left: 25px;
+    margin-right: 25px;
+
+    // font-size: 1.5em;
+
+    h1 {
+        // font-size: 2.5em;
+    }
+
+    .sample-programs {
+        h2 {
+            text-decoration: underline;
+            padding-bottom: 10px;
+            // font-size: 2em;
+        }
+
+        p {
+            padding-bottom: 25px;
+        }
+    }
+}

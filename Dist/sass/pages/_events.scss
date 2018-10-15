@@ -1,0 +1,46 @@
+.bg-events {
+    background-color: $color-events;
+}
+
+.container {
+
+    width: 100%;
+    // font-size: 2em;
+
+    .events-header {
+        // text-decoration: underline;
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
+
+    .content {
+
+        text-align: center;
+
+        h2 {
+            text-decoration: underline;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+            padding-top: 25px;
+        }
+
+        img {
+            // width: 680px;
+            // padding-bottom: 25px;
+            // margin: 10px auto 20px;
+            // text-align: center;
+            // max-width: 100%;
+            // height: auto;
+        }
+
+        p {
+            text-decoration: none;
+        }
+
+        .bold {
+            font-weight: 700;
+            text-decoration: none;
+        }
+    }
+    
+}

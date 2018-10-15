@@ -1,0 +1,95 @@
+.card {
+
+    //Functionality 
+    // perspective: 1500px;
+    // -moz-perspective: 1500px; took out due making screen resize address later 
+    height: 100%;
+    position: relative;
+
+    &__side {    
+        // background-color: orangered;
+        // background-color: transparent;
+        height: 100%;
+        width: 100%;
+        transition: all .8s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+
+        &--front {
+            // background-color: orangered;
+            background-color: transparent;
+        }
+
+        &--back {
+            background-color: green;
+            transform: rotateY(180deg);
+
+            &-1 {
+                background-color: $color-about;
+            }
+            &-2 {
+                background-color: $color-events;
+            }
+            &-3 {
+                background-color: $color-music;
+            }
+            &-4 {
+                background-color: $color-resources;
+            }
+            &-5 {
+                background-color: $color-contact;
+            }
+        }
+    }
+
+
+    &:hover &__side--front{
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back{
+        transform: rotateY(0deg);
+    }
+
+    //Front Side Styling 
+    &__heading {
+        font-size: 2.5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $color-white;
+        text-align: center;
+        position: absolute;
+        top: 60%;
+        height: 5rem;
+        width: 100%;
+        background-color: $color-banner;
+
+    }
+
+    &__social {
+        letter-spacing: 5px;
+        margin-top: 50px;
+        // margin-left: 20px; 
+        text-align: center;
+        color: white;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+
+    //Back Side Styling
+    &__picture {
+        background-size: contain;
+        height: 100%;
+        
+
+        &--1 {
+            // background-image: url(/dist/assets/graf.jpg);     
+        }
+    }
+} 

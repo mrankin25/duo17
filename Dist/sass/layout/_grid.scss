@@ -1,0 +1,19 @@
+.row {
+    // max-width: 100vh;
+    width: $grid-width;
+    margin: 0 auto;
+
+    @include clearfix;
+
+    .col-1-of-5 {
+        width: calc((100% - 4px) / 5);
+        height: 100vh;
+        // background-color: orangered;    
+        float: left;
+        
+    
+        &:not(:last-child) {
+            border-right: $gutter-vertical $color-white solid;
+        }
+    }
+}

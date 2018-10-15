@@ -1,0 +1,23 @@
+.bg-contact {
+    background-color: $color-contact;
+}
+
+.contact-info {
+    
+    padding-top: 25px;
+    // padding-right: 50px;
+    // padding-left: 50px;
+    font-size: 2em;
+
+    img {
+        // height: 500px;
+        width: 330px;
+        // float: right;
+        text-align: right;
+    }
+
+    a {
+        text-decoration: none;
+        color: blue;
+    }
+}

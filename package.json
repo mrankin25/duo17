@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "compile:sass": "node-sass dist/sass/main.scss dist/css/style.css -w"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage":"https://scianci.github.io/duo1717"
+  "homepage": "https://scianci.github.io/duo1717",
   "dependencies": {
     "gh-pages": "^2.0.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.3"
   }
 }
