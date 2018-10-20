@@ -32,3 +32,95 @@ h4 {
     padding-top: 6%;
     text-decoration: underline;
 }
+
+.mobile-view {
+    height: 100vh;
+    
+
+    &_img {
+        height: 35vh;
+        background-image: url(../assets/home.jpg);
+        background-size: cover;
+
+        .logo {
+            height: 100px;
+            display: inline;
+            margin-left: 5%;
+            
+        }
+    }
+
+    &_links {
+
+        height: 65vh;
+
+        // grid
+        display: grid;
+        grid-template-columns: 100%;
+       
+
+        &-link {
+
+            font-size: 2em;
+            text-align: center;
+
+            a {
+                display: block;
+            }
+            
+        }
+    }    
+
+}
+
+.social {
+    float: right;
+    padding-top: 8%;
+    padding-right: 5%;
+    color: white;
+
+    // a, a:visited, a:hover, a:active {
+    //     color: white;
+    // }
+}
+
+.color-1 {
+    background-color: $color-about;
+}
+
+.color-2 {
+    background-color: $color-events;
+}
+
+.color-3 {
+    background-color: $color-music;
+}
+
+.color-4 {
+    background-color: $color-resources;
+}
+
+.color-5 {
+    background-color: $color-contact;
+}
+
+
+//media queries 
+
+// shown on small screens 
+@media (max-width: 400px) {
+    #mobile-view { display: block; }  
+    .home { display: none; }
+    }
+
+@media (min-width: 401px) {
+    #mobile-view { display: none; }   /* hide it elsewhere */
+    .home { display: block; }
+    .card__heading { font-size: 1.5rem; padding-top: 20%;}
+    }
+
+
+@media (min-width: 1150px) {
+    .card__heading { font-size: 2.5rem; padding-top: 10%;}
+    }
+

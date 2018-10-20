@@ -21,3 +21,11 @@
         color: blue;
     }
 }
+
+@media (max-width: 400px) {
+    .contact-info { font-size: 1.25rem; }
+    }
+
+@media (min-width: 401px) {
+    .contact-info { font-size: 2rem; }
+    }
